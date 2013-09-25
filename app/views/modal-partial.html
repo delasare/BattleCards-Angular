@@ -1,0 +1,35 @@
+<div ng-controller="modalCtrl">
+    <div modal="shouldBeOpen" close="close()" options="opts">
+        <div class="modal-header">
+            <h3>Add Skylander</h3>
+        </div>
+        <div class="modal-body">
+            <form>
+              <fieldset>
+                <input type="text" ng-model="skylander.name" placeholder="Name" /> <br />
+                <select ng-model="skylander.element">
+                  <option value="" selected>Select Element</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option value="Air">Air</option>
+                  <option value="Earth">Earth</option>
+                  <option value="Undead">Undead</option>
+                  <option value="Tech">Tech</option>
+                </select>
+                <br />
+                 <select ng-model="skylander.series">
+                  <option value="">Select Series</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+                <br />
+                <input type="text" ng-model="skylander.power" placeholder="Power" /><br />
+                <input type="text" ng-model="skylander.speed" placeholder="Speed"/><br />
+                <input type="text" ng-model="skylander.shield" placeholder="Shield" /><br />
+                <input type="text" ng-model="skylander.luck" placeholder="Luck" /><br />
+               <button class="btn btn-primary submit" ng-click="addSkylander()">Save</button>&nbsp; &nbsp;<button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+              </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

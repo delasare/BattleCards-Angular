@@ -1,0 +1,55 @@
+ <!-- Example row of columns -->   
+<form class="form-search">
+  <label>Search :</label>
+  <input type="text" class="input-medium search-query" ng-model="name" />&nbsp;&nbsp;<button data-toggle="modal" href="#editModal" class="btn btn-inverse"><i class="icon-pencil"></i>New Skylander</button>
+</form>
+<div class="row">
+  <div class="span4" ng-repeat="skylander in skylanders | orderBy: 'element' | filter: name">
+      <h3>{{skylander.name}}</h3>
+      <pre>{{skylander.element}}</pre>
+			<ul>
+				<li>Power: {{skylander.power}}</li>
+				<li>Speed: {{skylander.speed}}</li>
+				<li>Shield: {{skylander.shield}}</li>
+				<li>Luck: {{skylander.luck}}</li>
+				<li>Total: {{skylander.power + skylander.speed + skylander.shield + skylander.luck }}</li>
+			</ul>
+      <button ng-click="deleteSkylander(skylander)">Delete</button> <button data-toggle="modal" href="#editModal" ng-click="showSkylander(skylander)">Update</button>
+  </div>
+</div>
+<div class="modal fade" ng-include="view/modal-partial.html" id="editModal" href="#editModal"></div>
+<!-- <div ng-controller="SkylandersCtrl">
+    <div modal="shouldBeOpen" close="close()" options="opts">
+        <div class="modal-header">
+            <h3>Add Skylander</h3>
+        </div>
+        <div class="modal-body">
+            <form>
+              <fieldset>
+                <input type="text" ng-model="skylander.name" placeholder="Name" /> <br />
+                <select ng-model="skylander.element">
+                  <option value="" selected>Select Element</option>
+                  <option value="Fire">Fire</option>
+                  <option value="Water">Water</option>
+                  <option alue="Air">Air</option>
+                  <option value="Earth">Earth</option>
+                  <option value="Undead">Undead</option>
+                  <option value="Tech">Tech</option>
+                </select>
+                <br />
+                 <select ng-model="skylander.series">
+                  <option value="">Select Series</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+                <br />
+                <input type="text" ng-model="skylander.power" placeholder="Power" /><br />
+                <input type="text" ng-model="skylander.speed" placeholder="Speed"/><br />
+                <input type="text" ng-model="skylander.shield" placeholder="Shield" /><br />
+                <input type="text" ng-model="skylander.luck" placeholder="Luck" /><br />
+               <button class="btn btn-primary submit" ng-click="addSkylander()">Save</button>&nbsp; &nbsp;<button class="btn btn-warning cancel" ng-click="close()">Cancel</button>
+              </fieldset>
+            </form>
+        </div>
+    </div>
+</div>-->

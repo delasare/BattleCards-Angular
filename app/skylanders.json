@@ -1,0 +1,72 @@
+[
+  {
+    "Name": "Eye Brawl",
+    "Element": "Undead",
+    "Power": 150,
+    "Speed": 100,
+	  "Shield": 50,
+	  "Luck": 50,
+	  "Image": "eyebrawl.jpg",
+	  "Series": 2
+  },
+  {
+    "Name": "Chop Chop",
+    "Element": "Undead",
+    "Power": 150,
+    "Speed": 100,
+	  "Shield": 50,
+	  "Luck": 50,
+	  "Image": "chopchop.jpg",
+	  "Series": 1
+  },
+  {
+    "Name": "Hex",
+    "Element": "Undead",
+    "Power": 150,
+    "Speed": 100,
+	  "Shield": 50,
+	  "Luck": 50,
+	  "Image": "hex.jpg",
+	  "Series": 1
+  },
+  {
+    "Name": "Cynder",
+    "Element": "Undead",
+    "Power": 150,
+    "Speed": 100,
+	  "Shield": 50,
+	  "Luck": 50,
+	  "Image": "cynder.jpg",
+	  "Series": 1
+  },
+  {
+    "Name": "Double Trouble",
+    "Element": "Magic",
+    "Power": 90,
+    "Speed": 30,
+    "Shield": 60,
+    "Luck": 100,
+    "Image": "doubletrouble.jpg",
+    "Series": 1
+  },
+  {
+    "Name": "Hot Dog",
+    "Element": "Fire",
+    "Power": 85,
+    "Speed": 70,
+    "Shield": 50,
+    "Luck": 80,
+    "Image": "hotdog.jpg",
+    "Series": 2
+  },
+  {
+    "Name": "Pop Fizz",
+    "Element": "Magic",
+    "Power": 65,
+    "Speed": 50,
+    "Shield": 50,
+    "Luck": 105,
+    "Image": "popfizz.jpg",
+    "Series": 2
+  }
+]
